@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frenzy Car Rental 🚗</title>
+  <link rel="stylesheet" href="um.css"> <!-- External CSS -->
+</head>
+<body>
+
+<header>
+  <h1>Frenzy Car Rental 🚗</h1>
+</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search cars...">
+</div>
+
+<div class="car-grid" id="carGrid">
+  <div class="car-card" onclick="openModal('car.png', 'Ford Mustang', 'A classic American muscle car.')">
+    <img src="car.png" alt="Car 1">
+    <div class="car-info">
+      <h3>DIRT BIKE</h3>
+    </div>
+  </div>
+
+  <div class="car-card" onclick="openModal('tvsraider.png', 'Jeep Wrangler', 'An off-road beast for adventures.')">
+    <img src="tvsraider.png" alt="Car 2">
+    <div class="car-info">
+      <h3>TV RAIDER</h3>
+    </div>
+  </div>
+
+  <div class="car-card" onclick="openModal('Screenshot 2025-04-27 143852.png', 'Toyota Fortuner', 'A luxury SUV for comfort and power.')">
+    <img src="Screenshot 2025-04-27 143852.png" alt="Car 3">
+    <div class="car-info">
+      <h3>HARLEY DAVIDSON</h3>
+    </div>
+  </div>
+</div>
+
+<div class="no-result" id="noResult">No cars found!</div>
+
+<!-- Modal Popup -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Car Image">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+
+    <label for="duration">Choose duration:</label>
+    <select id="duration">
+      <option value="1">1 Day</option>
+      <option value="2">2 Days</option>
+      <option value="3">3 Days</option>
+      <option value="7">1 Week</option>
+    </select>
+
+    <button onclick="bookNow()">Book Now</button>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content" id="paymentContent">
+    <!-- Payment content will be dynamically added here -->
+  </div>
+</div>
+
+<script src="um.js"></script> <!-- External JS -->
+</body>
+</html>

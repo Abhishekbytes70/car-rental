@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frendzy Car Rental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="form">
+  <h2 id="form-title">Create an account</h2>
+
+  <form id="signup-form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="submit" value="Sign Up">
+  </form>
+
+  <form id="signin-form" style="display: none;">
+    <input type="text" placeholder="Name" required>
+    <input type="password" placeholder="Password" required>
+    <input type="submit" value="Sign In">
+  </form>
+
+  <div class="toggle-link">
+    <span id="toggle-text">
+      Already have an account? <a href="#" onclick="toggleForm()">Sign In</a>
+    </span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
