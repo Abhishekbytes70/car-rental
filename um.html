@@ -16,28 +16,26 @@
   </div>
 
   <div class="car-grid" id="carGrid">
-    <div class="car-card" onclick="openModal('car.png', 'Ford Mustang', 'A classic American muscle car.')">
-      <img src="pic/car.png" alt="Car 1">
+    <div class="car-card" onclick="openModal('pic/car.png', 'DIRT BIKE', 'A powerful off-road dirt bike.')">
+      <img src="pic/car.png" alt="DIRT BIKE">
       <div class="car-info">
         <h3>DIRT BIKE</h3>
       </div>
     </div>
-    <div class="car-card" onclick="openModal('tvsraider.png', 'Jeep Wrangler', 'An off-road beast for adventures.')">
-      <img src="pic/tvsraider.png" alt="Car 2">
+
+    <div class="car-card" onclick="openModal('pic/tvsraider.png', 'TVS RAIDER', 'A fast and stylish street bike.')">
+      <img src="pic/tvsraider.png" alt="TVS RAIDER">
       <div class="car-info">
-        <h3>TV RAIDER</h3>
+        <h3>TVS RAIDER</h3>
       </div>
     </div>
-  
-    <div class="car-card" onclick="openModal('Screenshot 2025-04-27 143852.png', 'Toyota Fortuner', 'A luxury SUV for comfort and power.')">
-      <img src="pic/Screenshot 2025-04-27 143852.png" alt="Car 3">
+
+    <div class="car-card" onclick="openModal('pic/Screenshot 2025-04-27 143852.png', 'HARLEY DAVIDSON', 'A luxury cruiser bike for long rides.')">
+      <img src="pic/Screenshot 2025-04-27 143852.png" alt="HARLEY DAVIDSON">
       <div class="car-info">
         <h3>HARLEY DAVIDSON</h3>
       </div>
     </div>
-  </div>
-    <!-- Add more cars here -->
-
   </div>
 
   <div class="no-result" id="noResult">No cars found!</div>
@@ -58,10 +56,14 @@
         <option value="7">1 Week</option>
       </select>
 
-      <button onclick="bookNow()">Book Now</button>
+      <button onclick="bookNow()" style="margin-top: 20px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Book Now</button>
     </div>
   </div>
-
+  <div id="paymentModal" class="modal" style="display:none;">
+    <div class="modal-content" id="paymentContent">
+      <!-- Payment options will be added by JavaScript -->
+    </div>
+  </div>
   <script src="um.js"></script>
 </body>
 </html>

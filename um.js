@@ -82,7 +82,7 @@ function showPaymentOption() {
   if (method === 'qr') {
     paymentDetails.innerHTML = `
       <p>Scan this QR to Pay:</p>
-      <img src="pic/qrcode.jpg" alt="QR Code" style="width:200px;">
+      <img src="qr.png" alt="QR Code" style="width:200px;">
     `;
     confirmPayment.style.display = 'block';
   } else if (method === 'cash') {
